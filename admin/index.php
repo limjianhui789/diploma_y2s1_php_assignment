@@ -186,6 +186,23 @@
                     </div>
                     <!-- User Management Btn -->
 
+                    <!-- User Management Btn -->
+                    <div class="row d-flex mb-3">
+                        <div class="d-grid gap-2 col-12 mx-auto">
+                            <button type="button" class="btn btn-primary" onclick="location.href = './load_test.php'">
+                                <div class="row justify-content-between">
+                                    <div class="col-auto">
+                                        Load Test
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="bi bi-speedometer"></i>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- User Management Btn -->
+
                     <!-- Logout Btn -->
                     <form action="includes/logout.php" method="POST">
                         <div class="row d-flex mb-3">
