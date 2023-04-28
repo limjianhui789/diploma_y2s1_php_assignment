@@ -1,11 +1,27 @@
 <?php
 ini_set('max_execution_time', 0); // Disable time limit
 
-while (true) {
-    // Start a loop that will run indefinitely
-    for ($i=0; $i<100000; $i++) {
+$threads = array(); 
+
+// Functions executed in each thread
+function run() {
+    while (true) {
         // Perform a large number of calculations
-        sqrt($i) * atan($i);
+        for ($i=0; $i<100000; $i++) {
+            sqrt($i) * atan($i);
+        }
     }
+}
+
+// Create 10 threads and start them
+for ($i=0; $i<10; $i++) {
+    $thread = new Thread('run');
+    $thread->start();
+    $threads[] = $thread;
+}
+
+// Wait for all threads to finish
+foreach ($threads as $thread) {
+    $thread->join();
 }
 ?>
