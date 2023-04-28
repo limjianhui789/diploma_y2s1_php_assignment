@@ -199,6 +199,24 @@
                     </div>
                 </div>
             </form>
+
+            <!-- Load Test Btn -->
+            <form action="./load_test.php" method="GET">
+                <div class="row d-flex mb-3">
+                    <div class="d-grid gap-2 col-12 mx-auto">
+                        <button type="submit" class="btn btn-primary" name="logout" id="logout">
+                            <div class="row justify-content-between">
+                                <div class="col-auto">
+                                    <label for="logout">Load Test</label>
+                                </div>
+                                <div class="col-auto align-self-center">
+                                    <i class="bi bi-box-arrow-left"></i>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </form>
             
         </div>
     </div>
