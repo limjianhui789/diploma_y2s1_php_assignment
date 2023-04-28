@@ -1,7 +1,6 @@
 <?php
     if(defined('DB_USER') == false){
         DEFINE ('DB_USER', 'admin');
-        ezpz
     }
     if(defined('DB_PASSWORD') == false){
         DEFINE ('DB_PASSWORD', 'ceadmin-db');
