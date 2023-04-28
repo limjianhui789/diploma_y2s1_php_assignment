@@ -1,3 +1,6 @@
+<?php
+phpinfo();
+?>
 <?php 
     require_once("./includes/sql_connection.php");
     require_once("./includes/permision_checker.php");
