@@ -31,9 +31,9 @@
             $query = "SELECT is_admin FROM nitro_user WHERE username = '{$_SESSION['username']}' AND is_admin = 1";
             $result = $conn->query($query);
             if($result->num_rows == 0){
-                printf("<meta http-equiv=\"refresh\" content=\"3; url='%s/index.php'\" />", $serverAddress);
+                printf("<meta http-equiv=\"refresh\" content=\"3; url='/index.php'\" />");
                 require_modal();
-                modal_msg(array("You are not admin. Illegal Access...<br>Auto Redirect After 3 Seonds"), "Illegal Access", "{$serverAddress}/index.php");
+                modal_msg(array("You are not admin. Illegal Access...<br>Auto Redirect After 3 Seonds"), "Illegal Access", "/index.php");
                 die();
             }
             $result->free();
@@ -46,9 +46,9 @@
     }
 
     if(!$valid){
-        printf("<meta http-equiv=\"refresh\" content=\"3; url='%s/signin.php'\" />", $serverAddress);
+        printf("<meta http-equiv=\"refresh\" content=\"3; url='/signin.php'\" />");
         require_modal();
-        modal_msg(array("You haven't logged in yet...<br>Auto Redirect After 3 Seconds"), "Please Log In", "{$serverAddress}/signin.php");
+        modal_msg(array("You haven't logged in yet...<br>Auto Redirect After 3 Seconds"), "Please Log In", "/signin.php");
         die();
     }
 ?>

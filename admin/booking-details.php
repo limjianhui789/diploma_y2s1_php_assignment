@@ -88,7 +88,7 @@
                     $eventStatus = getStatus($eventStartDate, $eventEndDate, $eventStartTime, $eventEndTime); //It will define $eventStatus 
                     $eventStatusColor = getStatusColor($eventStatus);
                     //Handle Image
-                    $image = $serverAddress.$row->posterURL;
+                    $image = "/" + $row->posterURL;
                     echo '<div class="container rounded-3 p-lg-5 p-3" style="background-color: #F9FAFC;">';
 
                     printf('

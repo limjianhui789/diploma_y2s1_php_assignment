@@ -32,7 +32,7 @@
                     $query = "SELECT posterURL FROM nitro_event E, nitro_poster P WHERE E.posterID = P.posterID AND E.eventID = {$row->eventID}";
                     $img_result = $conn->query($query);
                     while($img_row = $img_result->fetch_object()){
-                        $image = $serverAddress.$img_row->posterURL;
+                        $image = "/"+$img_row->posterURL;
                     }
 
                     //Handle Category
@@ -259,7 +259,7 @@
                     //Showing Event List 
                     while($row = $result->fetch_object()){
                         //Handle Image
-                        $image = $serverAddress.$row->posterURL;
+                        $image = "/"+$row->posterURL;
                         
                         if($row->is_deleted == 0){
                             //Handle Status

@@ -58,7 +58,7 @@
                         </div>
                     </div>
                     <div class="row mt-4 mx-4">
-                        <form action="<?php require("./includes/getServerAddr.php"); echo $serverAddress; ?>/admin/includes/venue_request.php" method="POST">
+                        <form action="/admin/includes/venue_request.php" method="POST">
                             
                             <div class="row">
                                 <!-- Add Venue Button -->

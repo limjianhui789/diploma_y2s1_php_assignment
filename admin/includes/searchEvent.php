@@ -19,7 +19,7 @@
     //Showing Event List 
     while($row = $result->fetch_object()){
         //Handle Image
-        $image = $serverAddress.$row->posterURL;
+        $image = "/" + $row->posterURL;
         
         if($row->is_deleted == 0){
             //Handle Status

@@ -49,7 +49,7 @@
                 </div>
 
                 <div class="container">
-                    <form action="<?php echo $serverAddress; ?>/admin/includes/category_request.php" method="POST">
+                    <form action="/admin/includes/category_request.php" method="POST">
                         <div class="row px-lg-5 px-0">
                             <div class="col pb-5 rounded-3" style="background-color: white">
                                 <div class="row mt-4 mx-4 g-2">
