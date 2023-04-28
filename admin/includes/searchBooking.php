@@ -28,7 +28,7 @@
             $eventEndTime = date('h:i A', strtotime($row->eventEndTime));
             $eventStatus = getStatus($eventStartDate, $eventEndDate, $eventStartTime, $eventEndTime); //It will define $eventStatus 
             //Handle Image
-            $image = "/" + $row->posterURL;
+            $image = "/".$row->posterURL;
             if($eventStatus == "Ongoing"){
                 $eventStatusColor = "success";
             }else if($eventStatus == "Expired"){

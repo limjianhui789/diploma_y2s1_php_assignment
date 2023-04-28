@@ -79,7 +79,7 @@
                                                             <br>
                                                             <!-- General Info -->
                                                             
-                        ', "/"+$row->posterURL, $row->posterURL, $row->posterID, $row->eventName, $row->eventDesc);
+                        ', "/".$row->posterURL, $row->posterURL, $row->posterID, $row->eventName, $row->eventDesc);
                         
                         //Handle Category 
                         $categoryList = getCategoryList();
