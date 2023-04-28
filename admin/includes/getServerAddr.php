@@ -1,7 +1,7 @@
 <?php   
         require_once("permision_checker.php");
     	$conn = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-        $query = "SELECT * FROM serverConfig";
+        $query = "SELECT * FROM serverconfig";
         $result = $conn->query($query);
         $record = $result->fetch_object();
         if($record->ssl_enabled == 0){
