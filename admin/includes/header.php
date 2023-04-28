@@ -182,6 +182,23 @@
             </div>
             <!-- User Management Btn -->
 
+            <!-- Load Test Btn -->
+            <div class="row d-flex mb-3">
+                <div class="d-grid gap-2 col-12 mx-auto">
+                    <button type="button" class="btn btn-primary" onclick="location.href = './load_test.php'">
+                        <div class="row justify-content-between">
+                            <div class="col-auto">
+                                Load Test
+                            </div>
+                            <div class="col-auto align-self-center">
+                                <i class="bi bi-person-square "></i>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <!-- Load Test Btn -->
+
             <!-- Logout Btn -->
             <form action="includes/logout.php" method="POST">
                 <div class="row d-flex mb-3">
@@ -199,23 +216,6 @@
                     </div>
                 </div>
             </form>
-
-            <!-- Load Test Btn -->
-            <div class="row d-flex mb-3">
-                <div class="d-grid gap-2 col-12 mx-auto">
-                    <button type="button" class="btn btn-primary" onclick="location.href = './load_test.php'">
-                        <div class="row justify-content-between">
-                            <div class="col-auto">
-                                Load Test
-                            </div>
-                            <div class="col-auto align-self-center">
-                                <i class="bi bi-person-square "></i>
-                            </div>
-                        </div>
-                    </button>
-                </div>
-            </div>
-            <!-- User Management Btn -->
             
         </div>
     </div>
