@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://www.googleapis.com/webfonts/v1/webfonts?key=YOUR-API-KEY');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+:root{
+    --background-color :#A58BFF;
+    --sideBar-background:rgba(255, 255, 255, 0.1);
+    --word-color: #fff;
+    --colorBlack:black;
+    --colorWhite:white;
+    --colorSection1:#0C0032;
+    --colorSection2:#190061;
+    --colorSection3:#240090;
+    --colorSection4:#3500D3;
+    --colorSection5:#282828;
+    --fontfamily1:'Alumni Sans Pinstripe', Courier, monospace;
+    --fontfamily2:'Aboreto', Courier, monospace;
+    --fontfamily3:'Silkscreen', Courier, monospace;
+    --swiper-slider-color: #fff;
+    
+}
+
+/* background color */
+body{
+    background-color: var(--colorSection1);
+    color: white;
+}
+
+/*container*/
+.event-detail-container{
+    padding: 25px 20px;
+}
+
+/*transition for words*/
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-100deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.event-name h2, .words p, .card-img-top, .card-img-details{
+    animation: transitionIn 2.5s;
+}
+
+/*event name section*/
+#breakingLine{
+    height: 5px;
+    color: white;
+    background-color: white;
+}
+
+#eventTitle{
+    padding: 10px;
+    background-image: linear-gradient(grey,var(--colorSection1));
+}
+
+.event-name{
+    color: black;
+    margin: 5px;
+	text-align: center;
+}
+
+.event-name h2{
+    text-align: justify;
+    font-size: 20px;
+    margin: 20px;
+}
+
+/*event content*/
+.card-img-details{
+    border-radius: 20px;
+    width: 100%;
+}     
+
+.words p{
+    text-align: justify;
+    margin: 10px;
+}
+
+.event-content td{
+    margin: 10px 10px;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+.event-content h1{
+    text-align: justify;
+    margin: 10px;
+}
+
+.button-detail{
+    margin: 10px;
+}
+
+/*button in event content and card*/
+.btn-primary{
+    background: pink;
+    color: black;
+}
+
+.btn-primary:hover{
+    transition: linear .5s;
+    background: black;
+    color: red;
+}
+
+/*card*/
+
+.card{
+    width: 100%;
+    padding: 20px;
+    background-color: #f2f0f0;
+    border-radius: 20px;
+}
+
+.card-body{
+    padding: 20px;
+}
+
+.card-text{
+    text-align: justify;
+}
+
+.class-table{
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}

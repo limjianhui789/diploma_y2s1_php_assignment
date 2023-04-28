@@ -1,0 +1,222 @@
+/*body*/
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://www.googleapis.com/webfonts/v1/webfonts?key=YOUR-API-KEY');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+:root{
+    --background-color :#A58BFF;
+    --sideBar-background:rgba(255, 255, 255, 0.1);
+    --word-color: #fff;
+    --colorBlack:black;
+    --colorWhite:white;
+    --colorSection1:#0C0032;
+    --colorSection2:#190061;
+    --colorSection3:#240090;
+    --colorSection4:#3500D3;
+    --colorSection5:#282828;
+    --fontfamily1:'Alumni Sans Pinstripe', Courier, monospace;
+    --fontfamily2:'Aboreto', Courier, monospace;
+    --fontfamily3:'Silkscreen', Courier, monospace;
+    --swiper-slider-color: #fff;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--colorSection1);
+    overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: white ; 
+    border-radius: 10px;
+}
+  
+  /* Handle on hover */ 
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+}
+
+.header-content{
+    margin: 0 20px 0 20px;
+
+}
+.company-information{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#imageLogo{
+    width: 200px;
+    height: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#societyName{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p.address{
+    font-size: 10px;
+}
+
+.list-title{
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.dot{
+    font-size: 12px;
+}
+.row.info{
+    font-size: 12px;
+}
+
+.list-invoice{
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-left: 100px;
+
+}
+
+.row.info-invoice{
+    font-size: 12px;
+}
+
+
+#breakingline{
+    
+    width: 100px;
+    align-items: right;
+    justify-content: end;
+}
+
+
+.invoice-content{
+    margin-left: 33px;
+}
+
+
+/*main item*/
+.kakao {
+    width: 500px;
+    height: 100px;
+    background:url(./kakao.png) no-repeat; 
+    /*background-size:contain;*/
+  }
+  .pdf-page {
+    margin: 0 auto;
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.3);
+    color: #333;
+    position: relative;
+  
+    /* background image add */
+    background-color: white;
+    background-size:contain;
+  
+    /* background-color: #fff; */
+  }
+  .pdf-header {
+    position: absolute;
+    top: .5in;
+    height: .6in;
+    left: .5in;
+    right: .5in;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .invoice-number {
+    padding-top: .17in;
+    float: right;
+  }
+  .pdf-footer {
+    position: absolute;
+    bottom: .5in;
+    height: .6in;
+    left: .5in;
+    right: .5in;
+    padding-top: 10px;
+    border-top: 1px solid #e5e5e5;
+    text-align: left;
+    color: #787878;
+    font-size: 12px;
+  }
+  .pdf-body {
+    position: absolute;
+    top: 400px;
+    bottom: 1.2in;
+    left: .5in;
+    right: .5in;
+  }
+  
+  .size-a4 { width: 8.3in; height: 11.7in; }
+  .size-letter { width: 8.5in; height: 11in; }
+  .size-executive { width: 7.25in; height: 10.5in; }
+  
+
+  .for {
+    position: absolute;
+    top: 1.5in;
+    left: .5in;
+    width: 2.5in;
+  }
+  .from {
+    position: absolute;
+    top: 1.5in;
+    right: .5in;
+    width: 2.5in;
+  }
+  .from p, .for p {
+    color: #787878;
+  }
+  .signature {
+    padding-top: .5in;
+  }
+  .box-col {
+    float: left;
+  }
+  
+  #button-invoice{
+    max-width: 890px;
+  }
+
+.box-col button{
+    color: white;
+    border: 2px solid #0C0032;
+    background-color: #282828;
+    transition: all 0.2s ease;
+    box-shadow: black;
+}
+
+.whole-container{
+    background-color: #190061;
+    border: 4px solid #3500D3;
+}  

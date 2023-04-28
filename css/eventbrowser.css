@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://www.googleapis.com/webfonts/v1/webfonts?key=YOUR-API-KEY');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+:root{
+    --background-color :#A58BFF;
+    --sideBar-background:rgba(255, 255, 255, 0.1);
+    --word-color: #fff;
+    --colorBlack:black;
+    --colorWhite:white;
+    --colorSection1:#0C0032;
+    --colorSection2:#190061;
+    --colorSection3:#240090;
+    --colorSection4:#3500D3;
+    --colorSection5:#282828;
+    --fontfamily1:'Alumni Sans Pinstripe', Courier, monospace;
+    --fontfamily2:'Aboreto', Courier, monospace;
+    --fontfamily3:'Silkscreen', Courier, monospace;
+    --swiper-slider-color: #fff;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--colorSection1);
+    overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: white ; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+.side-logo img{
+    width: 220px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    padding: 0 1rem 1rem 0;
+    position: relative;
+}
+
+
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    object-fit: cover;
+    background-repeat: initial;
+}
+
+.carousel-caption{
+    position: absolute;
+    bottom: 30%;
+}
+
+.carousel-caption h5{
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    font-weight: 900;
+}
+
+.carousel-caption p{
+    font-size: 18px;
+    margin: auto;
+    width: 60%;
+    line-height: 1.9;
+}
+
+.carousel-caption a{
+    text-transform: uppercase;
+    background: white;
+    padding: 10px 30px;
+    display: inline-block;
+    color: black;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+
+.titleCompetition{
+    color: white;
+    border: 2px solid white;
+    text-align: center;
+}
+
+
+
+.event-Slider img{
+    max-width: 100%;
+    height: auto;
+
+}
+
+.eventSliderTitle1 h1{
+    border: 2px solid #03BFCB;
+    background-color: rgb(9, 18, 33);
+    color: var(--colorWhite);
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.eventSliderTitle2 h2{
+    color: var(--colorWhite);
+}
+
+#next-btn-slider, #prev-btn-slider{
+    color: var(--swiper-slider-color);
+}
+
+
+  
+.poster {
+    width: 280px;
+    height: 365px;
+    border-radius: 15px;
+    padding: 1.5rem;
+    background: white;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.poster:hover {
+    transform: translateY(20px); 
+}
+
+.poster:hover:before {
+    opacity: 1; 
+}
+
+.poster:hover .poster-info {
+    opacity: 1;
+    transform: translateY(0px); 
+}
+
+.poster:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0; 
+}
+.poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px; 
+}
+.poster .poster-info {
+    position: absolute;
+    top: 20px;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s; 
+    padding: 2px;
+}
+.poster .poster-info h1 {
+    font-size: 20px;
+    margin: 2px;
+}
+
+.poster .poster-info p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px; 
+}
+
+
+.poster-button {
+    padding: 0.6rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease; 
+    text-decoration: none;
+    margin: 5px;
+  }
+
+.button-group{
+    position: absolute;
+    left: 70px;
+}
+
+
+.poster .poster-info .poster-button:hover {
+    background: dodgerblue;
+    color: white; 
+}
+  

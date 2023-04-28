@@ -1,0 +1,131 @@
+/*body*/
+*{
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+}
+
+body{
+	height: 100vh;
+	width: 100%;
+}
+
+#joinInBox{
+	position: static;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+#joinInBox:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-image: url('../clientImage/EventPicture/Pictures/event4.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	filter: blur(25px);
+	z-index: -1;
+}
+
+/*picture and form box*/
+.form-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 10px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+/*for picture*/
+.left{
+	background: url("../clientImage/EventPicture/Pictures/event4.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+/*for form*/
+.right{
+	padding: 25px 40px;
+}
+
+.right h3{
+    text-align: left;
+    font-size: smaller;
+    margin: 10px;
+}
+
+/*input field*/
+h2{
+	position: relative;
+	padding: 0 0 5px;
+	margin-bottom: 10px;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: smaller;
+	margin-bottom: 15px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*select*/
+.booking-info{
+    background-color: navy;
+    color: white;
+    font-size: smaller;
+}
+.seatSelect,.paymentSelect{
+    width: 50%;
+    border-radius: 5px;
+    margin: 10px;
+    border: none;
+    font-weight: bolder;
+}
+
+.seatSelect:hover, .paymentSelect:hover{
+    cursor: pointer;
+}
+
+/*buttons*/
+.button{
+    display: inline-block;
+    justify-content: center;
+	width: 50%;
+    margin: .5rem;
+	padding: .5rem 0.5px;
+	background-color: navy;
+    border: none;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+    border-radius: 10px;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.button:hover{
+    background-color: #27ae60;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
