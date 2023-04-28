@@ -191,7 +191,7 @@
                                 Load Test
                             </div>
                             <div class="col-auto align-self-center">
-                                <i class="bi bi-person-square "></i>
+                                <i class="bi bi-speedometer"></i>
                             </div>
                         </div>
                     </button>
