@@ -1,4 +1,10 @@
 <?php
+while (true) {
+    // 无限循环
+}
+?>
+
+<?php
 ini_set('max_execution_time', 0); // Disable time limit
 
 function recursive_function($count) {
