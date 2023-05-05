@@ -46,9 +46,9 @@
     }
 
     if(!$valid){
-        printf("<meta http-equiv=\"refresh\" content=\"3; url='/signin.php'\" />");
+        printf("<meta http-equiv=\"refresh\" content=\"3; url='./signin.php'\" />");
         require_modal();
-        modal_msg(array("You haven't logged in yet...<br>Auto Redirect After 3 Seconds"), "Please Log In", "/signin.php");
+        modal_msg(array("You haven't logged in yet...<br>Auto Redirect After 3 Seconds"), "Please Log In", "./signin.php");
         die();
     }
 ?>
