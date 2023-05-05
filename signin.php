@@ -62,15 +62,14 @@
                                     if($row->password === $password){//Login Success
                                         if($row->is_banned == 0){
                                             if($rememberme == null){
-                                                echo "<p><strong>Login Successfully</strong></p>";
+                                                echo "<p><strong>Login Successfully TEST 123</strong></p>";
                                                 $_SESSION['ExpTime'] = time()+3600;
                                                 $_SESSION['username'] = $username;
                                                 $login_success = 1;
-                                                echo "Testing";
                                             }else{
                                                 $_SESSION['ExpTime'] = time()+10800;
                                                 $_SESSION['username'] = $username;
-                                                echo "<p><strong>Login Successfully</strong></p>";
+                                                echo "<p><strong>Login Successfully Test 123</strong></p>";
                                                 echo "<p>Remember Me : 3 Hours</p>";
                                                 $login_success = 1;
                                             }
