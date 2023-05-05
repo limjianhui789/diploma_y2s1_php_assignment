@@ -5,9 +5,9 @@
         $result = $conn->query($query);
         $record = $result->fetch_object();
         if($record->ssl_enabled == 0){
-            $serverAddress = "http://{$record->domain}:{$record->port}{$record->defaultPath}";
+            $serverAddress = "http://du538vf139l5a.cloudfront.net:80{$record->defaultPath}";
         }else{
-            $serverAddress = "https://{$record->domain}:{$record->port}{$record->defaultPath}";
+            $serverAddress = "https://du538vf139l5a.cloudfront.net:443{$record->defaultPath}";
         }
         $result->free();
         $conn->close();
