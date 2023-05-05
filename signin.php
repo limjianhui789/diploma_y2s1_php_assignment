@@ -66,6 +66,7 @@
                                                 $_SESSION['ExpTime'] = time()+3600;
                                                 $_SESSION['username'] = $username;
                                                 $login_success = 1;
+                                                echo "Testing";
                                             }else{
                                                 $_SESSION['ExpTime'] = time()+10800;
                                                 $_SESSION['username'] = $username;
