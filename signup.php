@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
     <head>
-        <title>Nitro Society - Register Page</title>
+        <title>Creative Event - Register Page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="./image/favicon.ico">
@@ -54,7 +54,7 @@
                         $stmt->bind_param('sssssss', $username, $password, $email, $contact, $first_name, $last_name, $gender);
                         $stmt->execute();
 
-                        $plain_html = "Successfully Register As a Member in Nitro Society";
+                        $plain_html = "Successfully Register As a Member in Creative Event";
                         sendMail($email, "Hi, {$last_name}" , file_get_contents("admin/includes/email-template/register.html") , $plain_html);
                         modal_msg(array("Register Successfully"), "Success", "signin.php");
                         $stmt->close();

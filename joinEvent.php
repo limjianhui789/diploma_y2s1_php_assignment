@@ -107,7 +107,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
 
             <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mt-3">
 
-              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Nitro Society</h5>
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Creative Event</h5>
 
               <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam beatae veritatis fuga iusto deleniti hic explicabo repellendus.</p>
 

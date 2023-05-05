@@ -25,10 +25,10 @@
                     //$mail->SMTPSecure = false;
                     //$mail->SMTPAutoTLS = false;
                     //Recipients
-                    $mail->setFrom('nitrogaming.service@gmail.com', 'Nitro Society');
+                    $mail->setFrom('nitrogaming.service@gmail.com', 'Creative Event');
                     //$mail->addAddress('limjianhui789@gmail.com', 'Jian Hui');     //Add a recipient
                     $mail->addAddress($to);               //Name is optional
-                    $mail->addReplyTo('nitrogaming.service@gmail.com', 'Nitro Society');
+                    $mail->addReplyTo('nitrogaming.service@gmail.com', 'Creative Event');
                     //$mail->addCC('nitrogaming.service@gmail.com'); //For Same Level For a Copy
                     $mail->addBCC('blackpaper00001@gmail.com'); //Hidden Copy For Higher Level
     
