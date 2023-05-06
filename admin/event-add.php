@@ -38,7 +38,6 @@
                 if(isset($_POST['submit'])){
                     if(empty($errors)){//If Got No Error
                         $conn = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-                        echo $_FILES["event_poster"]["tmp_name"];
                         if (move_uploaded_file($_FILES["event_poster"]["tmp_name"], $target_file)) {
                             $query = "INSERT INTO nitro_poster(posterURL, posterUniq, posterDesc) VALUES('{$full_path}', '{$uniq_key}', '{$today}')";
                             $conn->query($query);
