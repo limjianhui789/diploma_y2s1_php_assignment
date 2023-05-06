@@ -13,6 +13,7 @@
         $uniq_key = uniqid();
         $target_file = $target_dir.$uniq_key.'.'.$imageFileType;
         $full_path = "admin/".$target_file;
+        echo $full_path;
     }
 
     //Globals
